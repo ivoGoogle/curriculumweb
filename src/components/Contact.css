@@ -1,0 +1,499 @@
+.form_content {
+    display: block;
+    margin:auto;
+    height: 60vh;
+    width: 150vh;
+  /*  background-color:  rgb(179, 189, 189);*/
+     background-color:  rgb(167, 190, 190);
+    position: absolute;
+    top: 0;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+  
+}
+
+.form_item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    height: 3.5vh;
+    margin: 0px;
+    background-color: rgb(31, 153, 135);
+    color: rgb(253, 248, 248);
+    font-weight: 700;
+}
+@keyframes shake2{
+     0%{
+         transform:rotate(0deg);
+ 
+     }
+     5%{
+         transform:rotate(2deg);
+     }
+     10%{
+         transform:rotate(0deg);
+     }
+     15%{
+         transform:rotate(0deg);
+ 
+     }
+     20%{
+         transform:rotate(-2deg);
+     }
+     25%{
+         transform:rotate(0deg);
+     }
+     30%{
+         transform:rotate(0deg);
+ 
+     }
+     35%{
+         transform:rotate(2deg);
+     }
+     40%{
+         transform:rotate(0deg);
+     }
+ 
+ }
+@keyframes shake{
+   /* 0%{
+        transform:rotate(0deg);
+
+    }
+    5%{
+        transform:rotate(2deg);
+    }
+    10%{
+        transform:rotate(0deg);
+    }
+    15%{
+        transform:rotate(0deg);
+
+    }
+    20%{
+        transform:rotate(-2deg);
+    }
+    25%{
+        transform:rotate(0deg);
+    }
+    30%{
+        transform:rotate(0deg);
+
+    }
+    35%{
+        transform:rotate(2deg);
+    }
+    40%{
+        transform:rotate(0deg);
+    }*/
+    90%{
+        transform:rotate(0deg);
+
+    }
+    95%{
+        transform:rotate(2deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+
+}
+
+
+.field {
+    
+/*    background-color: rgba(58, 59, 80, 0.89);*/
+   background-color: rgba(89, 90, 101, 0.89);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 90vh;
+    height: 50vh;
+    border: 5px solid rgba(12, 12, 73, 0.363);
+    box-shadow: 0px 0px 30px 2px rgba(33, 161, 155, 0.281) inset;
+    box-shadow: 20px 20px 20px 0px rgb(90, 80, 80);
+    border-image: url('/public/border.webp')55;
+    border-image-outset: -5px;
+    border-image-repeat:stretch;
+    transition: 2s all;
+    /*border-image-slice: 200 fill; */
+   /* background-image: url('/public/internet.webp');*/
+
+     
+       /* background-repeat: no-repeat;
+        /* Opcionalmente, puedes añadir otras propiedades para ajustar la imagen */
+       /* background-size:100% 100%; /* Ajusta el alto al 100% del contenedor y el ancho automáticamente */
+    /*    background-position: center; /* Centra la imagen en el elemento */
+
+      
+
+
+
+
+
+
+}
+
+
+.field label {
+    display: flex;
+    font-size: 20px;
+    color: #777;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1.5px 1.5px rgb(255, 255, 255) ;
+    margin: auto;
+    padding:1%;
+}
+
+.field input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 50%;
+    line-height: 1.5;
+    font-size: 14px;
+    width: 50%;
+    height: 2.5vh;
+  /*  border: none;*/
+
+    background: rgba(0, 0, 0, 0);
+/*    border-bottom: 3px outset rgb(8, 62, 241);*/
+   border-bottom: 3px outset rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px rgb(8, 62, 241);
+    padding-bottom: 1%;
+    color: whitesmoke;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px rgb(174, 190, 184);
+  
+}
+.field input:active{
+    border-bottom: 3px inset  rgb(31, 153, 135);
+    text-shadow: 2px 2px 20px rgb(31, 153, 135);
+    box-shadow: -0px -10px 15px -10px  inset black ;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.field input::selection,.field textarea::selection{
+    color: rgba(0, 255, 255, 0.61);
+    text-shadow: 2px 2px 3px black;
+}
+
+.field textarea {
+    background-color: #77777746;
+    height: 10vh;
+    width: 100%;
+    max-height: 80%;
+    max-width: 50%;
+    margin-bottom: 2%;
+    /*border-bottom: 3px outset rgb(8, 62, 241);*/
+        border-bottom: 3px outset rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px rgb(8, 62, 241);
+    color: whitesmoke;
+        margin: auto;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+}
+
+.field  textarea:focus{
+    border-bottom: 3px inset  rgb(31, 153, 135);
+    text-shadow: 2px 2px 20px rgb(31, 153, 135);
+    box-shadow: -0px -10px 15px -10px  inset black ;
+    
+}
+
+input[type="submit"] {
+    display: flex;
+    position: absolute;
+ width: 50%;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    font-size: 14px;
+  /*  background-color: #01090e;*/
+
+  background-color: #d4d3d3;
+    color: #fff;
+    border: 2px solid #a4bcbc;
+    margin: auto;
+    justify-content: center;
+    border-radius: 20px;
+    text-shadow: 2px 2px rgb(122, 136, 136);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+  /*  background-color: #01090e;*/
+  background-color: #b9c7d1;
+    color: #fff;
+    text-shadow: 2px 2px rgb(172, 168, 150);
+}
+
+input[type="submit"]:active {
+    background-color: #98b3c5;
+    color: #fff;
+    text-shadow: 1px 1px rgb(171, 171, 171);
+    border:3px solid #a4bcbc;
+}
+.form_content-info{
+display: flex;
+flex-direction: column;
+line-height: 6vh;
+
+}
+.box-msj-send-father div{
+  margin: auto;
+}
+
+
+
+/*
+CARTEL SEND!
+.box-msj-send{
+    display: none;
+    width: 200px;
+    height:200px;
+
+
+ 
+    box-shadow: 0px 3px -20px(50, 179, 11)k
+}*/
+@keyframes downletter{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg) translateY(0);
+    }
+    75% {
+        transform: rotate(360deg) translateY(10px);
+    }
+    100% {
+        transform: rotate(360deg) translateY(0);
+        color:rgba(188, 99, 193, 0.781);
+        box-shadow:0px 0px 15px lightblue;
+        line-height: 8px;
+    }}
+    @keyframes downletter2{
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(0deg) translateY(0);
+        }
+        75% {
+            transform: rotate(0deg) translateY(px);
+        }
+        100% {
+            transform: rotate(0eg) translateY(0);
+            text-shadow: 0px 0px 30px black;
+            /*box-shadow:0px 0px 15px lightblue;*/
+        }
+    }
+    @keyframes downletter3{
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+        /*    transform: rotate(360deg) translateY(0);*/
+        }
+        75% {
+            /*transform: rotate(360deg) translateY(10px);*/
+        }
+        100% {
+         /*   transform: rotate(360deg) translateY(0);*/
+        /* color:rgba(0, 0, 0, 0.781);*/
+         text-shadow: 0px 0px 30px black;
+         /*box-shadow:0px 0px 15px lightblue;*/
+         
+          
+            
+        }}
+    @keyframes downdivletter{
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(25deg);
+        }
+    }
+
+.letterAnimation{
+ 
+    /*animation : downletter 1s linear infinite;*/
+
+}
+.box-msj-send i{
+    display: flex;
+    width: 200px;
+    height:200px;
+    background-color: rgb(0, 0, 0);
+    background: radial-gradient(ellipse, rgb(72, 68, 80), rgba(107, 101, 110, 0.651));
+
+
+    border:2px solid silver;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 3px -20px(50, 179, 11)k
+}
+
+
+
+
+@keyframes psychedelicClick3 {
+0% {
+
+    scale: 0;
+    transform: skew(0deg) scale(1) translate(0, 0);
+    /*background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;*/
+    rotate: 0deg;
+    margin-top:-250px;
+}
+20% {
+  filter: hue-rotate(-35deg);
+}
+
+
+50%{
+    transform: skew(0deg) scale(1) translate(80, 0);
+  /*  background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;*/
+    
+    filter: hue-rotate(-35deg);
+}
+100%{
+    scale: 1;
+    transform: skew(0deg) scale(1) translate(80, 0);
+  /*  background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;*/
+    rotate:360deg;
+}
+}
+.box-msj-point{
+ 
+box-shadow: 0px 6px 20px rgb(139, 84, 21);
+color: rgb(177, 177, 177);
+font-size: 1.5em;
+    animation: psychedelicClick3 1s forwards;
+    
+    text-shadow: 
+    0px 10px white, 
+    0px 20px gray, 
+    0px 30px black, 0px 30px 5px rgb(125, 199, 174), /* Sombra blanca para texto negro */
+    0px 40px white, 
+    0px 50px gray, 
+    0px 60px black, 0px 60px 5px rgb(70, 37, 0), /* Sombra blanca para texto negro */
+    0px 70px white, 
+    0px 80px gray, 
+    0px 90px black, 0px 90px 5px rgb(128, 38, 3), /* Sombra blanca para texto negro */
+    0px 100px white, 
+    0px 110px gray, 
+    0px 120px black, 0px 120px 5px rgb(85, 3, 3), /* Sombra blanca para texto negro */
+    0px 130px rgb(255, 255, 255),
+    0px  140px rgb(255, 255, 255);
+ 
+  
+    width: 80px;
+    height: 1%;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+}
+/*
+.box-msj-point{
+ANIMACION ATOMO
+box-shadow: 0px 3px 20px black;
+    position:absolute;
+font-size: 1.5em;
+    animation: psychedelicClick 0.2s infinite;
+    border-radius: 100%;
+    text-shadow: 0px 1px white;
+    width: 190px;
+    height: auto;
+    margin-top: 10%;
+
+    justify-content: center;
+}*/
+@media (max-width:1900px){
+    .form_content {
+      
+        height: 80%;
+        width: 90%;
+    
+    }
+    .field {
+      
+
+        width: 90%;
+        height: 80%;
+   
+   
+    }
+    .field textarea {
+        background-color: #77777746;
+        height: 12vh;
+    
+        max-height: 20%;
+     
+        margin-bottom: 2%;
+        /*border-bottom: 3px outset rgb(8, 62, 241);*/
+            border-bottom: 3px outset rgb(255, 255, 255);
+        text-shadow: 2px 2px 20px rgb(8, 62, 241);
+        color: whitesmoke;
+            margin: auto;
+        font-weight: 600;
+        text-shadow: 1px 1px black;
+    }
+    
+}
+.div-roses-father{
+    display: flex;
+}
+.roses{
+    position: relative;
+    left:950px;
+    bottom:350px;
+    width: auto;
+    display: flex;
+}
+.roses img{
+    width:80px;
+    transform: rotateX(-160deg);
+    rotate:calc(90deg);
+    
+    filter: drop-shadow(5px 5px 5px rgba(203, 196, 196, 0.5));
+
+}
+.roses2 {
+    position: relative;
+left:30px;
+    bottom: 350px;
+    width: auto; /* Ajusta el ancho al contenido */
+    display: flex;
+}
+
+.roses2 img {
+    width: 80px;
+    transform: rotate(90deg);
+    filter: drop-shadow(5px 5px 5px rgba(203, 196, 196, 0.5));
+}
+

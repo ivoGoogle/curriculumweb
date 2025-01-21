@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link href="https://fonts.cdnfonts.com/css/gopixel-personal-use" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/brandon-grotesque-nathan-devi" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/doulos-sil-compact" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+  <style>
+  
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+@media(max-width:768px){
+  body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+ 
+
+    button {
+      background: none;
+      border: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    #html-button1 {
+      top: 0;
+      left:0;
+      position: absolute ;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    #html-button2 {
+      position: absolute;
+      display: none;
+      top: 0;
+      left:0;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    #html-button1 img, #html-button2 img {
+      width: 25px;
+      height: 25px;
+    }
+    .counter img {
+  
+      width: 130px;
+      position: absolute;
+      top: 42.9vw;
+      right: 0v;
+    }
+    @media(max-width:1200px){
+      .counter img {
+  
+  width: 130px;
+
+  position: absolute;
+  top: 53vw;
+  right: 0;
+  left: -10px;
+}
+    }
+    .counter a{
+      position: relative;
+      top: 2vw;
+ right: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="counter">
+  <a  title="hit counter"><img src="https://counter8.optistats.ovh/private/freecounterstat.php?c=pyc6e122jc6yfd96r12duxwqpwhjb2bl" border="0" title="hit counter" alt="hit counter"></a>
+</div>
+  <script>
+    function changeAudio(x) {
+      if (x == 0) {
+    const     audio =document.getElementById('sound1');
+        document.getElementById('sound1').play();
+        audio.volume=0.1;
+        document.getElementById("html-button1").style.display = "none";
+        document.getElementById("html-button2").style.display = "block";
+    
+      }
+      if (x == 1) {
+        document.getElementById('sound1').pause();
+        document.getElementById("html-button1").style.display = "block";
+        document.getElementById("html-button2").style.display = "none";
+      }
+    }
+
+  </script>
+  
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div>
+    <button id="html-button1" onclick="changeAudio(0)">
+      <img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_muted-0.png" alt="">
+    </button>
+    <button id="html-button2" onclick="changeAudio(1)">
+      <img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png" alt="">
+    </button>
+  </div>
+
+  <div id="root"></div>
+  <audio id="sound1" src="flowers.mp3" preload="auto"></audio>
+
+
+</body>
+
+</html>

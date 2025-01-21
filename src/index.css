@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@keyframes changeCursor {
+  0% {
+    cursor: url('../src/images/Icons/1.gif'), auto ;
+  }
+  5% {
+    cursor: url('../src/images/Icons/2.gif'), auto ;
+  }
+  10% {
+    cursor: url('../src/images/Icons/3.gif'), auto ;
+  }
+  15% {
+    cursor: url('../src/images/Icons/4.gif'), auto ;
+  }
+  20% {
+    cursor: url('../src/images/Icons/5.gif'), auto ;
+  }
+  25% {
+    cursor: url('../src/images/Icons/6.gif'), auto ;
+  }
+  30% {
+    cursor: url('../src/images/Icons/7.gif'), auto ;
+  }
+  35% {
+    cursor: url('../src/images/Icons/8.gif'), auto ;
+  }
+  40% {
+    cursor: url('../src/images/Icons/9.gif'), auto ;
+  }
+  45% {
+    cursor: url('../src/images/Icons/10.gif'), auto ;
+  }
+  50% {
+    cursor: url('../src/images/Icons/11.gif'), auto ;
+  }
+  55% {
+    cursor: url('../src/images/Icons/12.gif'), auto ;
+  }
+  60% {
+    cursor: url('../src/images/Icons/13.gif'), auto ;
+  }
+  65% {
+    cursor: url('../src/images/Icons/14.gif'), auto ;
+  }
+  70% {
+    cursor: url('../src/images/Icons/15.gif'), auto ;
+  }
+  75% {
+    cursor: url('../src/images/Icons/16.gif'), auto ;
+  }
+  80% {
+    cursor: url('../src/images/Icons/17.gif'), auto ;
+  }
+  85% {
+    cursor: url('../src/images/Icons/18.gif'), auto ;
+  }
+  90% {
+    cursor: url('../src/images/Icons/19.gif'), auto ;
+  }
+  95% {
+    cursor: url('../src/images/Icons/20.gif'), auto ;
+  }
+  100% {
+    cursor: url('../src/images/Icons/1.gif'), auto;
+  }
+}
+
+body {
+  background-image: url("../src/images/background.jpg");
+  margin: 0;
+ /* Aplica el cursor personalizado al body */
+  animation: changeCursor 10s infinite ; /* Duración y repetición de la animación */
+}
