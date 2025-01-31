@@ -436,7 +436,7 @@ const About = (/*{setChange,handleClick}*/) => {
           <span 
             key={charIndex}
             className={`char ${allLinesVisible && isWorkWord ? 'highlight-char' : ''}`}
-            style={{ animationDelay: `${charIndex * 0.03}s` }}
+            style={{ animationDelay: `${charIndex * 0.03}s`}}
           >
             {char}
           </span>

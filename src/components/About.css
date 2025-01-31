@@ -1782,19 +1782,22 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
 @media (max-width: 768px) {
   .text-box {
     padding: 1.8rem;
-    margin: 1rem;
-    width: 85%;
+ 
     transform: none;
   }
   .text-box2 {
     padding: 1.8rem;
-    margin: 1rem;
-    width: 85%;
+
     transform: none;
   }
   
   .text-line {
-    font-size: 1em;
+    font-size: 0.8em;
+  }
+  .text-line:first-child {
+    font-weight: 700;
+    color: #4c625f; /* Color especial para la primera línea */
+    font-size: 0.9em;
   }
 }
 /* Subrayado animado */
