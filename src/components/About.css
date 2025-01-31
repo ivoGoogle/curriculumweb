@@ -841,7 +841,8 @@ display: inline-block;
 
 
 .homePage__content-title h1 {
-  background-color: rgba(196, 195, 155, 0.322);
+ /* background-color: rgba(196, 195, 155, 0.322);*/
+ background-color: rgb(0 0 0 / 55%);
   font-family: 'Gopixel Personal Use', sans-serif;
   font-size: 4em;
   font-weight: 500;
@@ -935,7 +936,7 @@ z-index: 0;
 .homePage__content-title{
  /* text-shadow: 2px -2px rgb(62, 11, 204);*/
   /* text-shadow: 2px -2px rgb(11, 204, 27);*/
-  text-shadow: 2px -2px rgb(147 222 214);
+  text-shadow: 2px -4px rgb(147 222 214);
 
 }
 @keyframes psychedelicClickName {
@@ -1477,7 +1478,7 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
   .homePage__content {
     display: block;
     text-align: center;
-    width: 96%;
+    width: 97%;
     height: 90%;
   /*  background-color: aliceblue;*/
     /*background-color: rgb(105, 177, 240);*/
@@ -1567,7 +1568,7 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
     /*background-color: rgba(19, 235, 235, 0.836);*/
     background: white;
 
-    width: 96%;
+    width: 97%;
     height: 89.99%;
     opacity: 1;
     
