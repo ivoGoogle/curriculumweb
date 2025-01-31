@@ -1690,3 +1690,156 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
 /*padding-bottom: 2px;*/
 }
 }
+/* BASE CORRECT CODE  */
+.text-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  /*background: linear-gradient(135deg, #77e6e0 0%, #77e6e0 100%); /* Fondo amarillo/anaranjado */
+  padding: 20px;
+  position: relative;
+  z-index: 200;
+}
+
+.text-box {
+  background: #fff;
+  padding: 2.5rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  max-width: 680px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  border: 2px solid #77e6e0; /* Borde naranja */
+  position: relative;
+  z-index: 200;
+  transform: translateY(-5%); /* Posición más alta */
+}
+.text-box2 {
+  background: #fff;
+  padding: 2.5rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  max-width: 680px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  border: 2px solid #77e6e0; /* Borde naranja */
+  position: relative;
+  z-index: 200;
+  transform: translateY(-5%); /* Posición más alta */
+}
+/* MODIFICACIONES EN EL CSS */
+.text-line {
+  margin: 0.8rem 0;
+  line-height: 1.5;
+  font-size: 1.1em;
+  color: #2d3436;
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+  transform-origin: left center;
+}
+
+.text-line:first-child {
+  font-weight: 700;
+  color: #4c625f; /* Color especial para la primera línea */
+  font-size: 1.3em;
+}
+
+.highlighted-line {
+  font-weight: 700 !important;
+  color: #232222 !important ;
+  transform: scale(1.03);
+  transition: all 0.3s ease; /* Transición específica para el destaque */
+
+}
+
+/* Mantenemos la animación de aparición de caracteres */
+.char {
+  opacity: 0;
+  animation: appear 0.1s forwards;
+}
+
+
+@keyframes highlight {
+  0% {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  100% {
+    font-weight: 700;
+    opacity: 1;
+  }
+}
+
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .text-box {
+    padding: 1.8rem;
+    margin: 1rem;
+    width: 85%;
+    transform: none;
+  }
+  .text-box2 {
+    padding: 1.8rem;
+    margin: 1rem;
+    width: 85%;
+    transform: none;
+  }
+  
+  .text-line {
+    font-size: 1em;
+  }
+}
+/* Subrayado animado */
+.highlight-char {
+  position: relative;
+  z-index: 1;
+ /*background-color: rgba(130, 129, 129, 0.461);*/
+ 
+}
+
+
+.highlight-char::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right:0px;
+
+  width: 100%;
+  height: 1.5px;
+  box-shadow: 0px 0.3px 2px 0px black;
+  background: linear-gradient(90deg, #6bffdf, #43ffec);
+  animation: crayon-underline 1.2s ease-out forwards;
+  opacity: 0;
+
+
+}
+
+
+@keyframes crayon-underline {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: translateX(0px);
+
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+ 
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Mantener todos los estilos existentes sin cambios */
