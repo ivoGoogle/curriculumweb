@@ -1803,6 +1803,18 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
     color: #4c625f; /* Color especial para la primera línea */
     font-size: 0.9em;
   }
+  .highlight-char::before {
+    content: '';
+    position: absolute;
+    bottom: 16px !important;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(90deg, #6bffdf, #43ffec);
+    animation: underline-animation 0.6s ease-out forwards;
+    z-index: 1;
+  }
+  
 }
 /* Subrayado animado */
 .highlight-char {
