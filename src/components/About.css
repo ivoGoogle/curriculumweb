@@ -1808,43 +1808,54 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
   position: relative;
   z-index: 1;
  /*background-color: rgba(130, 129, 129, 0.461);*/
+ text-decoration: underline;
+ text-decoration-color: transparent; /* Oculta el subrayado predeterminado */
  
 }
 
 
+.highlight-char::before {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, #6bffdf, #43ffec);
+  animation: underline-animation 0.6s ease-out forwards;
+  z-index: 1;
+}
+
+/* Sombra animada (elemento secundario) */
 .highlight-char::after {
   content: '';
   position: absolute;
-  bottom: 20px;
-  left: 0px;
-  right:0px;
-
-  width: 100%;
+  bottom: 15px; /* Ajustado para separación visual */
+  left: 0;
+  right: 0;
+  width: 0;
   height: 1.5px;
-  box-shadow: 0px 0.3px 2px 0px black;
-  background: linear-gradient(90deg, #6bffdf, #43ffec);
-  animation: crayon-underline 1.2s ease-out forwards;
   opacity: 0;
-
-
+  animation: shadow-animation 1.2s 1s ease-out forwards;
 }
 
+@keyframes underline-animation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
 
-@keyframes crayon-underline {
+@keyframes shadow-animation {
   0% {
     width: 0;
     opacity: 0;
-    transform: translateX(0px);
-
-  }
-  50% {
-    opacity: 1;
     transform: translateX(0);
- 
+    box-shadow: 0 3px 1px 5px rgba(170, 170, 170, 0);
   }
+
   100% {
     width: 100%;
     opacity: 1;
+    box-shadow: 0 5px 1px 3px rgba(170, 170, 170, 0.137);
   }
 }
 

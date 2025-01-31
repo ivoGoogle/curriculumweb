@@ -245,7 +245,7 @@ const About = (/*{setChange,handleClick}*/) => {
       setTimeout(() => {
         setAllLinesVisible(true);
        
-        setTimeout(() => setShowSecondText(true), 2000); // Espera 2 segundos después de la última línea
+        setTimeout(() => setShowSecondText(true), 6000); // Espera 2 segundos después de la última línea
       }, 1000);
     }
   } , [fullText,currentIndex]);
