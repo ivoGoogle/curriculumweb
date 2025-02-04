@@ -358,7 +358,7 @@ const About = (/*{setChange,handleClick}*/) => {
         loop
       ></audio>
       <div class="homePage">
-      <div style={{ position: "absolute", left: "-16px", top: "70%" }}>
+      <div class="regulador-father" style={{ position: "absolute", left: "-16px", top: "70%" }}>
       {/* Botón para mostrar la paleta */}
       <button
       class="regulador-button"

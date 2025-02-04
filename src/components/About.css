@@ -1906,4 +1906,25 @@ text-decoration: none;
   #content-title{
     box-shadow:  1px 10px 5px var(--underline-color) ;
   }
+  .regulador-father{
+    width: 0px;
+    position: relative !important;
+    left: 0px !important;
+    top: -80px !important;
+    
+  }
+  .color-picker-container{
+    display: flex !important;
+    position: relative;
+    z-index: 250 !important;
+    top: 0px !important;
+    left: -20px !important;
+    padding: 0px !important;
+
+  }
+  .color-picker-container button{
+    margin:0px auto !important;
+    writing-mode: vertical-lr;
+    width: 1px;
+}
 }
