@@ -454,7 +454,7 @@ const About = (/*{setChange,handleClick}*/) => {
           
           <div class="homePage__about-title">
             <a href=" ">About</a>
-            <img src={close} alt="" onClick={() => closeWindow()}    style={{border:`4px outset ${selectedColor}`+"40" }}></img>
+            <img src={close} alt="" onClick={() => closeWindow()}    style={{border:`4px outset ${selectedColor}40` }}></img>
           </div>
           <div class="homePage__content">
             <div
