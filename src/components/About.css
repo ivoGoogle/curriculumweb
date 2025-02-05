@@ -1235,9 +1235,10 @@ z-index: 0;
   width: 0.8em;
   height: 0.8em;
   object-fit: scale-down;
-  background-color: rgb(170, 182, 182);
+  /*background-color: rgb(170, 182, 182);*/
   background-color: rgb(205, 220, 220);
-  border: 4px outset rgb(255, 255, 255);
+ /* background-color: var(--underline-color);*/
+ /* border: 4px outset var(--underline-color);*/
 }
 .eXDKh{
   border-style: groove !important;
