@@ -633,14 +633,16 @@ inset 0px 0px 25px 2px rgb(255, 255, 255),0px 0px 20px 1px rgba(0, 0, 0, 0),
     flex-wrap: wrap;
     height:50%;
     text-align: center;
-    line-height:3vh
-
+    line-height:3vh;
+    margin:auto !important;
 }
 
 .text div:first-child{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: auto !important;
+    border-radius: 5px;
     
 }
 .text div:nth-child(1) div{
