@@ -1941,9 +1941,9 @@ text-decoration: none;
   position: fixed;
   display: block;
   margin: auto;
-  height: 4em;
-  width: 3.3em;
-top:3px !important;
+  height: 32px;
+  width: 32px;
+top:10px !important;
  
   
 }
