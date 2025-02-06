@@ -455,24 +455,24 @@ const Skills = (/*{setChange,handleClick}*/) => {
       : {}
   }
 >
-                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(224 226 210)":item2=== "item2" ? "rgb(210 226 216)": item2 === "item3" ? "rgb(210 225 226)" :item2==="item4" ? "rgb(226 210 221)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
+                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(75 75 73)":item2=== "item2" ? "rgb(75 75 73)": item2 === "item3" ? "rgb(75 75 73)" :item2==="item4" ? "rgb(75 75 73)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
                                         {item2 === "item" ? (
-                                            <div className="itemTitle">
+                                            <div className="itemTitle" style={{color:"#c6c6c6"}}>
                                                 Lenguages
                                             </div>
                                         ) : item2 === "item2" ? (
-                                            <div className="itemTitle">Tools</div>
+                                            <div className="itemTitle" style={{color:"#c6c6c6"}}>Tools</div>
                                         ) : item2 === "item3" ? (
-                                            <div className="itemTitle">Work</div>
+                                            <div className="itemTitle" style={{color:"#c6c6c6"}}>Work</div>
                                         ) : item2 === "item4" ? (
-                                            <div className="itemTitle"> Education </div>)
+                                            <div className="itemTitle" style={{color:"#c6c6c6"}}> Education </div>)
                                             : null}
                                         {item2 === "item" ? (
                                             <div class="text"> 
                                                 <div>
                                                     <div style={{
                                                         border: '2px solid black',
-                                                        backgroundColor: 'rgb(69 69 138 / 13%)',
+                                                        backgroundColor: 'rgb(212 215 76 / 49%)',
                                                         padding: '20px',
                                                         fontFamily: 'Arial, sans-serif',
                                                         fontSize: '16px',
@@ -528,7 +528,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                     <div>
                                                         <div style={{
                                                             border: '2px solid black',
-                                                            backgroundColor: 'rgb(69 69 138 / 13%)',
+                                                            backgroundColor: 'rgb(76 215 115 / 49%)',
                                                             padding: '20px',
                                                             fontFamily: 'Arial, sans-serif',
                                                             fontSize: '16px',
@@ -590,7 +590,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         }}> */}
                                                               <div style={{
                                                             border: '2px solid black',
-                                                            backgroundColor: 'rgb(69 115 138 / 13%)', // Cambiado a rosa claro
+                                                            backgroundColor: 'rgb(76 161 215 / 49%)', // Cambiado a rosa claro
                                                             display:'inline-block',
                                                             fontFamily: 'Arial, sans-serif',
                                                             fontSize: '20px',
@@ -611,7 +611,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                     <div class="text" >
                                                         <div style={{
                                                             border: '2px solid black',
-                                                            backgroundColor: 'rgb(138 69 106 / 13%)', // Cambiado a rosa claro
+                                                            backgroundColor: 'rgb(215 76 76 / 44%)', // Cambiado a rosa claro
                                                             width:'90%',
                                                             fontFamily: 'Arial, sans-serif',
                                                             fontSize: '16px',
