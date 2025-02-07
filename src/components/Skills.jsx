@@ -473,7 +473,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                             <div class="text"> 
                                                 <div>
                                                     <div style={{
-                                                        border: '2px solid black',
+                                                        border: '2px solid #d0d57f',
                                                         backgroundColor: 'rgb(212 215 76 / 49%)',
                                                         padding: '20px',
                                                         fontFamily: 'Arial, sans-serif',
@@ -529,7 +529,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                 <div class="text" >
                                                     <div>
                                                         <div style={{
-                                                            border: '2px solid black',
+                                                            border: '2px solid rgb(196 255 218)',
                                                             backgroundColor: 'rgb(76 215 115 / 49%)',
                                                             padding: '20px',
                                                             fontFamily: 'Arial, sans-serif',
@@ -591,7 +591,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                             borderRadius: "5px",
                                                         }}> */}
                                                               <div style={{
-                                                            border: '2px solid black',
+                                                            border: '2px solid #9cf0f5',
                                                             backgroundColor: 'rgb(76 161 215 / 49%)', // Cambiado a rosa claro
                                                             display:'inline-block',
                                                             fontFamily: 'Arial, sans-serif',
@@ -612,7 +612,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                 ) : item2 === "item4" ? (
                                                     <div class="text" >
                                                         <div style={{
-                                                            border: '2px solid black',
+                                                            border: '2px solid #ffc8c8',
                                                             backgroundColor: 'rgb(215 76 76 / 44%)', // Cambiado a rosa claro
                                                             width:'90%',
                                                             fontFamily: 'Arial, sans-serif',
