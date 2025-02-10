@@ -529,7 +529,7 @@ const About = (/*{setChange,handleClick}*/) => {
                     
                      <div className="text-container">
                       
-                     <div className="text-box" style={showSecondText ? { display: "none" } : {border:`${selectedColor} 2px solid`}}>
+                     <div className="text-box" style={showSecondText ? { display: "none" } : {border:`${selectedColor}33 2px solid`, boxShadow: `0px 0px 0px 2px ${selectedColor}1A`}}>
   {visibleLines.map((line, index) => (
     <p 
       key={index} 
@@ -555,7 +555,7 @@ const About = (/*{setChange,handleClick}*/) => {
   ))}
 </div>
 
-<div className="text-box2" style={showSecondText ? { display: "block",border:`${selectedColor} 2px solid` } : {display:"none"}}>
+<div className="text-box2" style={showSecondText ? { display: "block",border:`${selectedColor}33 2px solid` ,boxShadow: `0px 0px 0px 2px ${selectedColor}1A`} : {display:"none"}}>
   {secondVisibleLines.map((line, index) => (
     <p 
       key={`second-${index}`} 

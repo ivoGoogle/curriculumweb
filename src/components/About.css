@@ -1705,8 +1705,9 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
 
 .text-box {
   background: #fffdfd;
+  /*box-shadow: 0px 0px 0px 1.2px rgb(87, 84, 84) !important;*/
   padding: 2.5rem 4rem;
-  border-radius: 20px;
+  border-radius: 5%;
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
   max-width: 680px;
   font-family: 'Courier New', Courier, monospace;
@@ -1719,8 +1720,9 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
 .text-box2 {
   background: #fffdfd;
   padding: 2.5rem 4rem;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 5%;
+ /* box-shadow: 0 15px 35px rgba(0,0,0,0.2);*/
+  /*box-shadow: 0px 0px 0px 20px rgb(174, 173, 173) !important;*/
   max-width: 680px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
