@@ -96,7 +96,7 @@ const Contact = (/*{setChange,handleClick}*/) => {
                 <div class="homePage__about-title">
                     <a href=" ">Contact
                     </a>
-                    <img src={close} alt="" onClick={() => closeWindow()}></img>
+                    <img src={close} alt="" onClick={() => closeWindow()}   style={{border:" 4px outset rgba(50, 70, 65, 0.25)" }}></img>
                 </div>
                 <div class="homePage__content">
            

@@ -1244,7 +1244,7 @@ z-index: 0;
 .homePage__about-title img {
   position: absolute;
   top: 11%;
-  right: 1%;
+  right: 0.5%;
   width: 0.8em;
   height: 0.8em;
   object-fit: scale-down;

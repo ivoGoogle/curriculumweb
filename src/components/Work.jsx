@@ -269,7 +269,7 @@ const Work = (/*{handleClick,setChange}*/) => {
                 <div class="homePage__about-title">
                     <a href=" # ">Work
                     </a>
-                    <img src={close} alt="" onClick={() => closeWindow()}></img>
+                    <img src={close} alt="" onClick={() => closeWindow()}  style={{border:" 4px outset rgba(50, 70, 65, 0.25)" }}></img>
                 </div>
                 <div class="homePage__content">
                     <div class="homePage_content-background" />
