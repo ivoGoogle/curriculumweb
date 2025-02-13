@@ -1276,6 +1276,7 @@ z-index: 0;
 
 
 .homePage__about-title img {
+  display: none;
   position: absolute;
   top: 18%;
   right: 0.6%;
