@@ -9,7 +9,7 @@ import about from "../images/about.png";
 //import message from "../images/message.png"
 
 //import marcador from "../images/marcador.png"
-import close from "../images/close-icon.png";
+/*import close from "../images/close-icon.png";*/
 import close2 from "../images/About/close2.png";
 import world from "../images/Icons/world98.png";
 
