@@ -32,6 +32,7 @@ const About = (/*{setChange,handleClick}*/) => {
   const [/*text4, setText4] = useState("");
   const [/*text5, setText5] = useState("");
   const [/*text6, setText6] = useState("");*/
+
   const [isAnimationActive /*, setIsAnimationActive*/] = useState(false);
  /* const [/*isDisintegrating,*setIsDisintegrating] = useState(false);*/
   const [animationTyping, setAnimationTyping] = useState(false);
@@ -40,6 +41,7 @@ const About = (/*{setChange,handleClick}*/) => {
   const audioElementRef = useRef(null);
 
 
+  const [showText2, setShowText2] = useState(false);
   const [, setShowText] = useState(false);
   //const iconRef = useRef(null);
 
@@ -190,11 +192,15 @@ const About = (/*{setChange,handleClick}*/) => {
     const audioElement = document.getElementById("typing");
 
     if (x === 0) {
+      setTimeout(() => {
+        const ButtonCodeElement = document.getElementById("code");
+        ButtonCodeElement.style.opacity = 0;
       setAnimationTyping(true);
-      const ButtonCodeElement = document.getElementById("code");
+    }, 1000); // 18000 milliseconds = 18 seconds
+ 
       if (audioElement) {
         audioElement.volume = 0.3;
-        ButtonCodeElement.style.opacity = 0;
+      
         audioElement.play().catch((error) => {
           console.error("Error playing the audio:", error);
         });
@@ -368,7 +374,7 @@ const About = (/*{setChange,handleClick}*/) => {
     // Convertir de vuelta a HEX y formatear con padding
     return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
 }
-  const [selectedColor, setSelectedColor] = useState(/*"#0BB58E"*/"#324641");
+  const [selectedColor, setSelectedColor] = useState(/*"#0BB58E"*//*"#324641"*/"#94B8AE");
   const [showColorPicker, setShowColorPicker] = useState(false);
   const underlineColor = selectedColor;
 
@@ -520,9 +526,17 @@ const About = (/*{setChange,handleClick}*/) => {
                             </div>*/}
 
                 <div id="code">
-                  <button className="coding" onClick={() => changeAudio(0)} style={{border:`2px ${selectedColor} double`}}>
+                  <button className="coding" onClick={() => changeAudio(0) + setShowText2(true)} style={showText2?{animation:"pushOff 0.25s linear "}:{animation:"code 2s infinite ",border:`2px ${selectedColor} double`}}>
                     <div id="coding2" style={{ display: "inline-block"}}>
                      Start
+                      <br></br>
+                    {/*   &lt;/&gt; */}
+                    </div>
+                    <br></br>
+                  </button>
+                  <button className="coding2"         onClick={() => setShowColorPicker(!showColorPicker)} style={showColorPicker? {animation:"pushOff 0.25s linear " }:{animation:"",border:`2px ${selectedColor} double`}}>
+                    <div id="coding2" style={{ display: "inline-block"}}>
+                     Config
                       <br></br>
                     {/*   &lt;/&gt; */}
                     </div>
