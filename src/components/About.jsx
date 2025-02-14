@@ -536,7 +536,7 @@ const underlineColor = selectedColor;
         color:"whitesmoke",
         borderRadius: "6px",
         transition: "background-color 0.2s",
-        "--underline-color": underlineColor +"40",
+        "--underline-color": underlineColor +"99",
         cursor: "pointer"
       }}
       onMouseEnter={(e) => e.target.style.backgroundColor = ""}
@@ -546,7 +546,7 @@ const underlineColor = selectedColor;
       <span style={{ color: language === "en" ? `rgb(210 210 210)`: "#777" }}> EN</span>
     </button>
     
-            <img  id="buttonsetting" src={settings} alt="" /*  onClick={() => closeWindow()} */   onClick={() => setShowColorPicker(!showColorPicker) } style={{"--underline-color": underlineColor+"40"}}    ></img>
+            <img  id="buttonsetting" src={settings} alt="" /*  onClick={() => closeWindow()} */   onClick={() => setShowColorPicker(!showColorPicker) } style={{"--underline-color": underlineColor+"99"}}    ></img>
           </div>
           <div class="homePage__content">
             <div

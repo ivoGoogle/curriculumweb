@@ -1278,9 +1278,9 @@ z-index: 0;
 .homePage__about-title img {
 
   position: absolute;
-  top: 12%;
+  top: 8%;
   right: 2%;
-  width: 0.8em;
+  width: 0.95em;
   height: 0.8em;
   object-fit: scale-down;
   /*background-color: rgb(170, 182, 182);*/
@@ -1292,7 +1292,7 @@ z-index: 0;
 .homePage__about-title button {
 
   position: absolute;
-  top: 10%;
+
   right: 5%;
  
   /*background-color: rgb(170, 182, 182);*/
