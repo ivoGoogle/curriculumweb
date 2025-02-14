@@ -2025,6 +2025,9 @@ top:10px !important;
  background: darkgray !important;
  
 }
+#button-language{
+  font-size: 12.5px !important;
+}
 }
 
 @keyframes pushOff {
