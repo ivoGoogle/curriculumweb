@@ -216,8 +216,8 @@ const About = (/*{setChange,handleClick}*/) => {
       audioElement.volume = 0;
     }
   }
-
-  const fullText = useMemo(() => [
+  const [language, setLanguage] = useState("es");
+  const fullTextEnglish = useMemo(() => [
     "I'm Ivo, a full stack developer",
     "From Buenos Aires. This is my",
     "website, a place where I share",
@@ -225,24 +225,48 @@ const About = (/*{setChange,handleClick}*/) => {
     "run wild, and let people",
     "know things about me"
 ], []);
+const fullTextSpanish = useMemo(() => [
+"Soy Ivo, un desarrollador full stack",
+"Desde Buenos Aires. Este es mi",
+"sitio web, un lugar donde comparto",
+"mis proyectos, dejo volar mi imaginación",
+"y permito que la gente",
+"conozca cosas sobre mí"
+], []);
 
   
-  const secondText = useMemo(() => [
+  const secondTextEnglish = useMemo(() => [
     "Here are my personal",
     "interests for professional.",
     "purposes you might be  ",
     "interested in my work or ",
     "collaboration."
   ], []);
-  
+  const secondTextSpanish = useMemo(() => [
+  "Aquí están mis intereses personales,",
+"para fines profesionales.",
+"Tal vez te interese",
+"mi trabajo o una",
+"colaboración."
+], []);
   const [visibleLines, setVisibleLines] = useState([]);
   const [secondVisibleLines, setSecondVisibleLines] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [secondCurrentIndex, setSecondCurrentIndex] = useState(0);
   const [allLinesVisible, setAllLinesVisible] = useState(false);
   const [showSecondText, setShowSecondText] = useState(false);
+  useEffect(() => {
+    // Reiniciar el estado de la animación cuando cambia el idioma
+    setVisibleLines([]); // Vaciar las líneas visibles
+    setCurrentIndex(0);  // Reiniciar el índice
+    setSecondVisibleLines([]);
+    setSecondCurrentIndex(0);
+    setShowSecondText(false);
+    setAllLinesVisible(false);
+  }, [language]); // Se ejecuta cada vez que cambia el idioma
   
   useEffect(() => {
+    let fullText = language === "es" ? fullTextSpanish : fullTextEnglish;
     if(animationTyping)
     if (currentIndex < fullText.length) {
       const baseDelay = 1900;
@@ -261,9 +285,10 @@ const About = (/*{setChange,handleClick}*/) => {
         setTimeout(() => setShowSecondText(true), 6000); // Espera 2 segundos después de la última línea
       }, 1000);
     }
-  } , [fullText,currentIndex,animationTyping]);
+  } , [language,currentIndex,animationTyping,fullTextEnglish,fullTextSpanish]);
   
   useEffect(() => {
+    let secondText = language === "es" ? secondTextSpanish : secondTextEnglish;
     if (showSecondText && secondCurrentIndex < secondText.length) {
       const baseDelay = 1900;
       const totalDelay = secondCurrentIndex === 0 ? 0 : baseDelay - 150 * secondCurrentIndex;
@@ -275,7 +300,7 @@ const About = (/*{setChange,handleClick}*/) => {
       
       return () => clearTimeout(timer);
     }
-  }, [showSecondText, secondCurrentIndex,secondText]);
+  }, [showSecondText, secondCurrentIndex,language,secondTextEnglish,secondTextSpanish]);
   
 
   
@@ -382,7 +407,7 @@ const About = (/*{setChange,handleClick}*/) => {
   const underlineColor = selectedColor;
 
 
-    const [language, setLanguage] = useState("es");
+
   
     const toggleLanguage = () => {
       setLanguage((prev) => (prev === "es" ? "en" : "es"));
@@ -545,7 +570,7 @@ const About = (/*{setChange,handleClick}*/) => {
               </div>
               <div class="homePage__content-description">
                 <h2 style={{ marginTop: "35px" }}>
-                  Full Stack Developer Junior
+                  {language === "es" ? "Desarrollador Web Full Stack de Nivel Medio" : "Mid-Level Full Stack Web Developer"}
                 </h2>
                 {/*<div class="homepage__content-medium">
                           <div clasS="homePage__content-img">
@@ -556,7 +581,7 @@ const About = (/*{setChange,handleClick}*/) => {
                 <div id="code">
                   <button className="coding" onClick={() => changeAudio(0) + setShowText2(true)} style={showText2?{animation:"pushOff 0.25s linear "}:{animation:"code 2s infinite ",border:`2px ${selectedColor} double`}}>
                     <div id="coding2" style={{ display: "inline-block"}}>
-                     Start
+                     {language === "es" ? "Comenzar" : "Start"}
                       <br></br>
                     {/*   &lt;/&gt; */}
                     </div>
@@ -564,7 +589,7 @@ const About = (/*{setChange,handleClick}*/) => {
                   </button>
                   <button className="coding2"         onClick={() => setShowColorPicker(!showColorPicker)} style={showColorPicker? {animation:"pushOff 0.25s linear " ,border:`2px ${selectedColor} double`}:{animation:"",border:`2px ${selectedColor} double`}}>
                     <div id="coding2" style={{ display: "inline-block"}}>
-                     Config
+                    {language === "es" ? "Configuracion": "Config"} 
                       <br></br>
                     {/*   &lt;/&gt; */}
                     </div>
