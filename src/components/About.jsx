@@ -501,8 +501,8 @@ const About = (/*{setChange,handleClick}*/) => {
       onMouseEnter={(e) => e.target.style.backgroundColor = ""}
       onMouseLeave={(e) => e.target.style.backgroundColor = ""}
     >
-      <span style={{ color: language === "es" ? `${selectedColor}40` : "#777" }}>ES</span> /  
-      <span style={{ color: language === "en" ? `${selectedColor}40`: "#777" }}> EN</span>
+      <span style={{ color: language === "es" ? `rgb(210 210 210)` : "#777" }}>ES</span> /  
+      <span style={{ color: language === "en" ? `rgb(210 210 210)`: "#777" }}> EN</span>
     </button>
     
             <img src={settings} alt="" /*  onClick={() => closeWindow()} */   onClick={() => setShowColorPicker(!showColorPicker)}    style={{border:`4px outset ${selectedColor}40` }}></img>
