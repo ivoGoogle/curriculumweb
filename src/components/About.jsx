@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 //import $ from 'jquery';
 import folder from "../images/folder.png";
-import skills from "../images/skills.png";
+/*import skills from "../images/skills.png";*/
 import about from "../images/about.png";
 
 //import win98 from "../images/Icons/win98.png";
