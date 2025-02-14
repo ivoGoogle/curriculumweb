@@ -531,7 +531,7 @@ const underlineColor = selectedColor;
       onClick={toggleLanguage} 
       style={{
       
-        fontSize: "12.5px",
+        fontSize: "11px",
         fontWeight: "bold",
         color:"whitesmoke",
         borderRadius: "6px",
