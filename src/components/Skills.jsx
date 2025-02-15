@@ -457,7 +457,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
       : {}
   }
 >
-                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(75 75 73)":item2=== "item2" ? "rgb(75 75 73)": item2 === "item3" ? "rgb(75 75 73)" :item2==="item4" ? "rgb(75 75 73)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
+                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(163 162 95 / 66%)":item2=== "item2" ? "rgb(95 163 117 / 66%)": item2 === "item3" ? "rgb(95 128 163 / 66%)" :item2==="item4" ? "rgb(163 95 109 / 66%)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
                                         {item2 === "item" ? (
                                             <div className="itemTitle" style={{color:"#c6c6c6"}}>
                                                 Lenguages
