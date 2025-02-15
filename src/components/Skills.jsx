@@ -381,7 +381,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                     <div class="homePage__about-title">
                         <a href=" ">Skills
                         </a>
-                        <img src={close} alt="" onClick={() => closeWindow()}  style={{border:" 4px outset rgba(50, 70, 65, 0.25)" }}></img>
+                     {/*   <img src={close} alt="" onClick={() => closeWindow()}  style={{border:" 4px outset rgba(50, 70, 65, 0.25)" }}></img> */}
                     </div>
                     <div class="homePage__content">
                         <div className="card">
@@ -748,7 +748,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                 </div>
                     <div class="bigItemContent2Close" style={{    backgroundColor: '#efefef',display:'inline-block' ,marginLeft:'62%', height:'15px' ,width:'15px',marginTop:'2px',  border: '1.3px solid black',borderRadius:'2px',boxShadow:'0px 0px 1px #c9c9c9'}}  >
             <button onClick={()=>   setNotaSeleccionada(null)} id="imagen-close">
-                <img  src={close} alt="" style={{filter:'drop-shadow(0px 0px 2px rgba(119,119,119,1))',marginBottom:'2px',marginLeft:'-3px' }}  ></img>
+              <img  src={close} alt="" style={{filter:'drop-shadow(0px 0px 2px rgba(119,119,119,1))',marginBottom:'2px',marginLeft:'-3px' }}  ></img>
                 </button>
                 </div>
                 </div>
