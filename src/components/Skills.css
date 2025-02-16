@@ -1,11 +1,15 @@
+
 .card {
    /* display: flex;*/
     justify-content: center;
     align-items: top;
     width: 100%;
     height: 100%;
-   background-color:#acacac;
+/*   background-color:#acacac;*/
    outline:5px double grey;
+  /* background-image: url('../images/Skills/blackboard.jpg');*/
+
+
 }
 
 .collection {
@@ -23,17 +27,20 @@
 }
 
 .collectionItem:nth-child(1)::before {
-    content: "<>";
+    content: "Code";
     position: absolute;
     padding-top: 15px;
     font-size: 2vh;
     font-weight: 600;
-    color: rgb(189, 182, 182);
-    text-shadow: 0.5px 0.5px rgb(151, 129, 129);
+    color:#acacac;
+  /*  text-shadow: 0.5px 0.5px rgb(151, 129, 129);*/
+  text-shadow: 0.5px 0.5px rgb(255 246 246);
     overflow: hidden;
     width: 60px;
     z-index: 20;
    /* text-shadow: 1px 1px rgb(83, 175, 179);*/
+   /*font-family: 'Shadows Into Light', cursive;*/
+   letter-spacing: 0.5px;
 
 }
 
@@ -42,7 +49,7 @@
 .collectionItem:nth-child(3):hover::before,
 .collectionItem:nth-child(4):hover::before {
     color: rgb(189, 182, 182);
-    text-shadow: 0.9px 0.9px 0.9px rgb(151, 129, 129);
+  /*  text-shadow: 0.9px 0.9px 0.9px rgb(151, 129, 129);*/
 }
 
 .collectionItem:nth-child(2)::before {
@@ -51,8 +58,11 @@
     padding-top: 15px;
     font-size: 1.8vh;
     font-weight: 600;
-    color: rgb(189, 182, 182);
-    text-shadow: 0.5px 0.5px rgb(151, 129, 129);
+    color:#acacac;
+  /*  text-shadow: 0.5px 0.5px rgb(151, 129, 129);*/
+  text-shadow: 0.5px 0.5px rgb(255 246 246);
+ /* font-family: 'Shadows Into Light', cursive;*/
+  letter-spacing: 0.5px;
     overflow: hidden;
     width: 60px;
     z-index: 20;
@@ -66,13 +76,17 @@
     font-size: 1.8vh;
     font-weight: 600;
     /*color: darkslategray;*/
-    color: rgb(189, 182, 182);
-    text-shadow: 0.5px 0.5px rgb(151, 129, 129);
+    color:#acacac;
+   /* text-shadow: 0.5px 0.5px rgb(151, 129, 129);*/
+   text-shadow: 0.5px 0.5px rgb(255 246 246);
     overflow: hidden;
     width: 60px;
     z-index: 20;
+  /*  font-family: 'Shadows Into Light', cursive;*/
+    letter-spacing: 0.5px;
     /*text-shadow: 1px 1px rgb(83, 175, 179);*/
 }
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .collectionItem:nth-child(4)::before {
     content: "Studies";
@@ -80,11 +94,15 @@
     padding-top: 15px;
     font-size: 1.8vh;
     font-weight: 600;
-    color: rgb(189, 182, 182);
-    text-shadow: 0.5px 0.5px rgb(151, 129, 129);
+    color:#acacac;
+    /*text-shadow: 0.5px 0.5px rgb(151, 129, 129);*/
+    text-shadow: 0.5px 0.5px rgb(255 246 246);
     overflow: hidden;
     width: 60px;
     z-index: 20;
+
+    letter-spacing: 0.5px;
+
    /* text-shadow: 1px 1px rgb(83, 175, 179);*/
 }
 .icon-container {
@@ -480,8 +498,19 @@ inset 0px 0px 25px 2px rgb(255, 255, 255),0px 0px 20px 1px rgba(0, 0, 0, 0),
     opacity: 1;
 
 }
+#item{
+    transform: rotate(-1deg);
+}
+
 #item,#item2,#item3,#item4{
     animation: shain 2s infinite;
+}
+#item3{
+    transform: rotate(-1deg);
+    top: 8px;
+}
+#itiem4{
+    transform: rotate(-8deg);
 }
 #item2{
     transform: rotate(10deg);
@@ -821,7 +850,7 @@ margin: 2px;
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 
- text-shadow:1px 1px 1px #fffee1, 0px 4px 5px #151212fc, 1px 1px 1px #ffffff !important;
+ text-shadow:1px 1px 1px #fafaef, 0px 4px 5px #151212fc, 1px 1px 1px #ffffff !important;
  font-family: "Orbitron", sans-serif;
     justify-content: space-around;
     align-items: center;
