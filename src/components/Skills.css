@@ -17,8 +17,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 50%;
     height: 20%;
+    margin: auto;
+
+}
+.collection .collectionItem {
+border-radius: 7px;
 }
 
 .collectionItem:hover>img {
@@ -144,6 +149,16 @@
 }
 
 @media (max-width:768px){
+    .collection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+        margin: auto;
+    
+    }
     .icon {
         width: 18vw  !important; /* Ajusta el tamaño del ícono */
         height: 18vw !important; /* Asegúrate de que el ícono mantenga su proporción */
@@ -550,6 +565,7 @@ inset 0px 0px 25px 2px rgb(255, 255, 255),0px 0px 20px 1px rgba(0, 0, 0, 0),
         transform: rotate(80deg);
     }
 }
+
 @keyframes shain {
     0%{
         filter: drop-shadow(2px 4px 6px white);
@@ -969,3 +985,10 @@ background-repeat: no-repeat;
 .boton:hover {
     background-color: #0000ff; /* Color azul brillante al pasar el ratón */
 }
+
+#tsparticles {
+    border-radius: 15px; /* Ajusta el valor según lo necesites */
+    overflow: hidden; /* Evita que las partículas se salgan de los bordes */
+    
+      
+  }
