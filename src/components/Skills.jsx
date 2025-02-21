@@ -330,51 +330,52 @@ const Skills = (/*{setChange,handleClick}*/) => {
     }, []);
 
     const [explosionDiv, setExplosionDiv] = useState(null); // Para controlar qué div tiene la explosión
-const handleColorChange2 = (color) => {
-    if (firstSpin) {
-        console.log("Ignorando el primer giro para evitar selección automática");
-        setFirstSpin(false); // Desactiva la restricción después del primer uso
-        return;
-    }
-    
-    console.log(`Estoy en skill y el color es este ${color}`);
-
-    const itemColors = {
-        Amarillo: "item",
-        Verde: "item2",
-        Azul: "item3",
-        Rosa: "item4"
-    };
-
-    if (itemColors[color]) {
-        const item = document.getElementById(itemColors[color]);
-        if (item) {
-            // Establecer la animación
-            item.style.animation = "shain 2s";
-            
-            // Actualizar la variable CSS con el color seleccionado
-            document.documentElement.style.setProperty('--shadow-color', color);
-
-            setExplosionDiv(item); // Esto indica que ese div debe tener la explosión
-
-            // Esperamos 2 segundos (la duración de la animación "shain") antes de ocultar la imagen
-            setTimeout(() => {
-                item.classList.add('collectionItemExplote'); // Eliminar la clase 'before' para cambiar el estado
-                item.style.height = "100px";
-                item.style.width = "20px";
-                item.style.background = "#007e7d";
-
-                // Ocultamos la imagen
-                const image = item.querySelector("img"); // Seleccionamos la imagen dentro del div
-                if (image) {
-                    image.style.opacity = "0"; // Hacemos la imagen invisible
-                    image.style.pointerEvents = "none"; // Desactivamos los eventos de clic en la imagen
-                }
-            }, 1000); // Retraso de 2 segundos
+    const handleColorChange2 = (color) => {
+        if (firstSpin) {
+            console.log("Ignorando el primer giro para evitar selección automática");
+            setFirstSpin(false); // Desactiva la restricción después del primer uso
+            return;
         }
-    }
-};
-
+        
+        console.log(`Estoy en skill y el color es este ${color}`);
+    
+        const itemColors = {
+            Amarillo: "item",
+            Verde: "item2",
+            Azul: "item3",
+            Rosa: "item4"
+        };
+    
+        if (itemColors[color]) {
+            const item = document.getElementById(itemColors[color]);
+            if (item) {
+                // Establecer la animación
+               
+                item.style.animation = "shain 2s";
+            
+                // Actualizar la variable CSS con el color seleccionado
+             
+    
+                setExplosionDiv(item); // Esto indica que ese div debe tener la explosión
+    
+                // Esperamos 2 segundos (la duración de la animación "shain") antes de ocultar la imagen
+                setTimeout(() => {
+                    item.classList.add('collectionItemExplote'); // Eliminar la clase 'before' para cambiar el estado
+                    item.style.height = "100px";
+                    item.style.width = "20px";
+                    item.style.background = "#007e7d";
+    
+                    // Ocultamos la imagen
+                    const image = item.querySelector("img"); // Seleccionamos la imagen dentro del div
+                    if (image) {
+                        image.style.opacity = "0"; // Hacemos la imagen invisible
+                        image.style.pointerEvents = "none"; // Desactivamos los eventos de clic en la imagen
+                    }
+                }, 1000); // Retraso de 2 segundos
+            }
+        }
+    };
+    
     
       
     return (
