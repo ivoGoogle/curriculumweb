@@ -22,7 +22,7 @@ const PaperExplosion = ({ position, color, color2, color3 }) => {
           init={particlesInit}
           options={{
             fullScreen: { enable: false },
-            background: { color: "#007e7d" },
+       /*     background: { color: "#007e7d" },*/
             particles: {
               number: { value: 150 },
               color: { value: [color, color2, color3] },
