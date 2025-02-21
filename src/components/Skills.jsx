@@ -40,6 +40,7 @@ import public_note_blue from "../images/Skills/public_note_blue2.png";
 import public_note_pink from "../images/Skills/public_note_pink2.png";
 import public_note_green from "../images/Skills/public_note_green2.png";
 import pack_notas from "../images/Skills/pack_notas.png";
+import ruleta from "../images/Skills/ruleta.png";
 import tacho_basura from "../images/Skills/tacho-basura.png";
 import InteractiveWheel from './InteractiveWheel';
 const Skills = (/*{setChange,handleClick}*/) => {
@@ -48,6 +49,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
     const [bonus, setBonus] = useState(false);
     const [firstSpin, setFirstSpin] = useState(true); // Estado para la primera vez
     const [notas, setNotas] = useState(false);
+    const [ruletaState, setRuletaState] = useState(false);
 
     const [descripcion, setDescripcion] = useState('');
     const [listaNotas, setListaNotas] = useState([]);
@@ -388,6 +390,11 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                 <img src={pack_notas} alt=""  style={{ width: '3.3em', height: '', marginRight: '10px' }}/>
                                 </button>
                                 </div>
+                                <div class="regulador-father" style={{ position: "absolute", left: "5.5%", top: "60%" }}>
+                    <button id="ruleta" style={{marginLeft:'15px',position:'relative' ,zIndex:'50'}} onClick={() => setRuletaState(true)} >
+                                <img src={ruleta} alt=""  style={{ width: '4em', height: '', marginRight: '10px' }}/>
+                                </button>
+                                </div>
                 <div class="homePage__folders">
                     <div class="homePage__folders-work" onClick={() => navigate("/work") + FolderDecide("work")}   /*onClick ={ function() { setChange('cameron') }} */ >
                         <img src={folder} alt="folder" />
@@ -456,7 +463,11 @@ const Skills = (/*{setChange,handleClick}*/) => {
 
                             </div>
                             <div>
+                                {  ruletaState ? 
                     <InteractiveWheel onColorChange={handleColorChange2} />
+                    :''
+                    }
+                
                             </div>
                             <div id="bigItem" className="collectionBigItem" >
                                 <div ><button style={{ color: "red",display:"none" }} onClick={() => setBonus(true)} >Bonus</button></div>
