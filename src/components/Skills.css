@@ -998,6 +998,6 @@ background-repeat: no-repeat;
   }
   @media  (max-width:768px){
     #tsparticles {
-   top:15px;    
+   top:10px;    
       }
   }
