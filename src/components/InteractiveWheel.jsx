@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-
+/*import confeti from "../images/Skills/Confeti.jpg";*/
 const InteractiveWheel = ({ onColorChange }) => {
     
   const [rotation, setRotation] = useState(0);

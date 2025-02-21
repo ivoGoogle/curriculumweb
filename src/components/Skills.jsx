@@ -733,6 +733,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
 </div>
 
                             <div>
+                                
     <div className="lista_notas">
         <div >
             {listaNotas.map((nota) => (
