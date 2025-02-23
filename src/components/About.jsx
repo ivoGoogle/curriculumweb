@@ -568,18 +568,23 @@ const underlineColor = selectedColor;
                 alt=""
               />
 
-              <div class="homePage__content-title" style={{textShadow:`2px -4px ${selectedColor},5px -8px ${selectedColor}40`}}>
+              <div class="homePage__content-title" style={showText2? {textShadow:`2px -4px ${selectedColor},5px -8px ${selectedColor}40`,transition:"0.2s all"}:{}}>
               <h1
   id="content-title"
-  style={
-    isAnimationActive
-      ? {
-          animation: "psychedelicClickName 5s linear infinite",
-        // Quita el !important
-        }
-        
-      : { boxShadow: ` 5px 5px 5px 5px  ${selectedColor}80, 8px 8px 8px 8px  ${selectedColor}40`, "--underline-color": underlineColor}
-  }
+  style={{
+    ...(isAnimationActive
+      ? { animation: "psychedelicClickName 5s linear infinite" }
+      : {}), // Si no hay animación, retorna un objeto vacío
+  
+    ...(showText2
+      ? { boxShadow: `${selectedColor}80 0px 0px 0px 5px` ,transition:"0.5s all" }
+      : { boxShadow: `5px 5px 5px 5px ${selectedColor}80, 8px 8px 8px 8px ${selectedColor}40` }
+    ),
+  
+    "--underline-color": underlineColor, // Esto siempre se aplica
+  }}
+  
+  
 >
                   Ivo Ortiz
                 </h1>
@@ -595,7 +600,7 @@ const underlineColor = selectedColor;
                             </div>*/}
 
                 <div id="code">
-                  <button className="coding" onClick={() => changeAudio(0) + setShowText2(true)} style={showText2?{animation:"pushOff 0.25s linear "}:{animation:"code 2s infinite ",border:`2px ${selectedColor} double`}}>
+                  <button className="coding" onClick={() => changeAudio(0) + setShowText2(true)} style={showText2?{animation:"pushOff 0.25s linear "}:{animation:"code 2s infinite ",boxShadow:`0px 5px 2px 5px ${selectedColor}4D `}}>
                     <div id="coding2" style={{ display: "inline-block"}}>
                      {language === "es" ? "Comenzar" : "Start"}
                       <br></br>
@@ -603,7 +608,7 @@ const underlineColor = selectedColor;
                     </div>
                     <br></br>
                   </button>
-                  <button className="coding2"         onClick={() => setShowColorPicker(!showColorPicker)} style={showColorPicker? {animation:"pushOff 0.25s linear " ,border:`2px ${selectedColor} double`}:{animation:"",border:`2px ${selectedColor} double`}}>
+                  <button className="coding2"         onClick={() => setShowColorPicker(!showColorPicker)} style={showColorPicker? {animation:"pushOff 0.25s linear " ,boxShadow:`0px 5px 2px 5px ${selectedColor}4D`}:{animation:"",boxShadow:`0px 5px 2px 5px ${selectedColor}4D`}}>
                     <div id="coding2" style={{ display: "inline-block"}}>
                     {language === "es" ? "Configuracion": "Config"} 
                       <br></br>

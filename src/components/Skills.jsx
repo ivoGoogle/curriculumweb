@@ -548,6 +548,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         fontSize: '16px',
                                                         fontStyle: 'italic',
                                                         lineHeight: '1.5',
+                                                        color:'transparent',
                                                     }}>
                                                         Knowledge of different programming languages.
                                                         The languages I currently use are:

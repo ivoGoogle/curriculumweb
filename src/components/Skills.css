@@ -288,7 +288,7 @@ border-radius: 7px;
   background-color: rgb(126 149 172) !important;*/
   background-color:rgb(202 202 202);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- box-shadow: inset 0px 0px 2px 2px rgb(0, 0, 0),0px 0px 20px 1px rgba(0, 0, 0, 0);
+ box-shadow: inset 0px 0px 2px 2px rgb(255, 255, 255),0px 0px 20px 1px rgba(255, 255, 255, 0);
 /*box-shadow: 
 inset 0px 0px 10px 2px rgb(251, 251, 251),0px 0px 20px 1px rgba(0, 0, 0, 0),
 inset 0px 0px 20px 5px rgb(228, 227, 227),0px 0px 20px 1px rgba(0, 0, 0, 0),
@@ -798,7 +798,7 @@ width: 50%;
     text-shadow: 1px 1px rgb(191 173 173), -2px -2px whitesmoke, 2px 2px 3px;
 }
 .itemTitle{
-    color: white !important;
+    color: #ffffffde  !important;
     display: inline-block;
     border-bottom: 3px ridge white;
     font-weight: 500;
