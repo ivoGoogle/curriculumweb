@@ -525,7 +525,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
       : {}
   }
 >
-                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(163 162 95 / 66%)":item2=== "item2" ? "rgb(95 163 117 / 66%)": item2 === "item3" ? "rgb(95 128 163 / 66%)" :item2==="item4" ? "rgb(163 95 109 / 66%)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
+                                    <div id="bigItemContent" style={{ backgroundColor: item2=== "item" ? "rgb(163 162 95 / 66%)":item2=== "item2" ? "rgb(95 163 117 / 66%)": item2 === "item3" ? "rgb(139 150 162 / 66%)" :item2==="item4" ? "rgb(163 95 109 / 66%)" : "initial"}} class="bigItem__content" ref={bigItemRef} >
                                         {item2 === "item" ? (
                                             <div className="itemTitle" style={{color:"#c6c6c6"}}>
                                                 Lenguages
@@ -605,6 +605,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                             fontSize: '16px',
                                                             fontStyle: 'italic',
                                                             lineHeight: '1.5',
+                                                            color:'transparent'
                                                         }}>
                                                             The tools and frameworks I use are:
                                                         </div>
@@ -661,7 +662,7 @@ const Skills = (/*{setChange,handleClick}*/) => {
                                                         }}> */}
                                                               <div style={{
                                                             border: '2px solid #9cf0f5',
-                                                            backgroundColor: 'rgb(76 161 215 / 49%)', // Cambiado a rosa claro
+                                                            backgroundColor: 'rgb(145 186 211 / 49%)', // Cambiado a rosa claro
                                                             display:'inline-block',
                                                             fontFamily: 'Arial, sans-serif',
                                                             fontSize: '20px',
