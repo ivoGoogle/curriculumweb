@@ -1788,7 +1788,8 @@ outline-offset: -5px; /* Ajusta la distancia del bordeado interno */
   transform: translateY(-5%); /* Posición más alta */
 }
 .text-box2 {
-  background: #fffdfd;
+  /*background: #fffdfd;*/
+  background: #acacac1c;
   padding: 2.5rem 4rem;
   border-radius: 5%;
  /* box-shadow: 0 15px 35px rgba(0,0,0,0.2);*/
